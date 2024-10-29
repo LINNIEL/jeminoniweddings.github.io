@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link ke file CSS jika ada -->
+    <style>
+        /* Gaya untuk body */
+        #countdown {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+#tiles span {
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    font-size: 2em;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 8px;
+    margin: 0 5px;
+}
+
+.labels {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.labels li {
+    font-size: 0.9em;
+    color: #555;
+    text-transform: uppercase;
+}
+
+    </style>
+</head>
+<body>
+
+<div id="countdown">
+    <div id='tiles'></div>
+    <div class="labels">
+        <li>hari</li>
+        <li>jam</li>
+        <li>Menit</li>
+        <li>detik</li>
+    </div>
+</div>
+
+<script>
+    // Set the countdown date to 5 November 2024 at 18:00
+    var target_date = new Date('November 5, 2024 18:00:00').getTime();
+    var days, hours, minutes, seconds; // variables for time units
+
+    var countdown = document.getElementById("tiles"); // get tag element
+
+    getCountdown();
+
+    setInterval(function () { getCountdown(); }, 1000);
+
+    function getCountdown() {
+        // find the amount of "seconds" between now and target
+        var current_date = new Date().getTime();
+        var seconds_left = (target_date - current_date) / 1000;
+
+        days = pad(parseInt(seconds_left / 86400));
+        seconds_left = seconds_left % 86400;
+
+        hours = pad(parseInt(seconds_left / 3600));
+        seconds_left = seconds_left % 3600;
+
+        minutes = pad(parseInt(seconds_left / 60));
+        seconds = pad(parseInt(seconds_left % 60));
+
+        // format countdown string + set tag value
+        countdown.innerHTML = "<span>" + days + "</span><span>" + hours + "</span><span>" + minutes + "</span><span>" + seconds + "</span>"; 
+    }
+
+    function pad(n) {
+        return (n < 10 ? '0' : '') + n;
+    }
+</script>
+
+</body>
+</html>

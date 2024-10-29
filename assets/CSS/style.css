@@ -1,0 +1,266 @@
+.container-mobile {
+    max-width: 576px; 
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
+
+.linniel {
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    scroll-snap-align: start;
+    flex-direction: column;
+    font-family: "Encode Sans Expanded", sans-serif;
+}
+
+.linniel-1 { /* CSS COVER */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.137), rgba(0, 0, 0, 0.712), rgb(0, 0, 0)),
+                url('image/background/bg.jpeg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.icon-undangan{
+    width: 32px;
+    margin-right: 5px;
+    margin-bottom: 3px;
+}
+.cover-nama{
+    font-family: "My Soul", cursive;
+    font-size: 46px;
+    text-shadow: 2px 2px 4px rgb(236, 134, 182);
+}
+.floating-card {
+    position: absolute; 
+    bottom: 70px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 60%; 
+    max-width: 500px; 
+    padding: 20px;
+    border-radius: 10px;
+}
+.btn{
+    border: solid 2px black;
+    color: pink;
+    box-shadow: 2px 2px 4px rgb(236, 134, 182);
+}
+/* CSS UNDANGAN */
+#audio {
+    display: none;
+}
+/* Style untuk tombol musik */
+.music-controls {
+    position: fixed;
+    padding-top: 110px;
+    z-index: 1000;
+    
+}
+.music-controls i {
+    align-items: center;
+    justify-content: center;
+}
+
+.music-controls button {
+    background-color: rgb(0, 195, 255);
+    border: none;
+    margin: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px black;
+}
+.play-btn, .pause-btn{
+    width: 40px;
+}
+
+.linniel-2 { 
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.726), rgb(0, 0, 0)),
+                url('image/background/bg2.jpeg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;   
+}
+.ayat, .quotes{
+    font-family: "Sriracha", cursive;
+    font-size: 16px;
+    text-shadow: 0px 2px 4px rgba(2, 2, 2, 0.918);
+}
+.ayat-2{
+    font-family: "Tangerine", cursive;
+    font-weight: bold;
+    font-size: 28px;
+}
+.content-1{
+    margin-top: 40px;
+    font-size: 14px;
+    width: 80%;
+}
+.undangan{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 90vh;
+    font-size: 12px;
+    padding-bottom: 40px;
+    width: 90%;
+}
+
+.linniel-3 { 
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.137), rgba(0, 0, 0, 0.904), rgb(0, 0, 0)),
+                url('image/background/bg-jemi.jpeg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: end;
+}
+#linniel-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Mendorong konten ke bawah */
+    height: 100vh; /* Membuat kontainer memenuhi tinggi layar */
+    padding-left: 20px; /* Jarak dari sisi kiri */
+    padding-bottom: 20px; /* Jarak dari sisi bawah */
+}
+
+.content-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Menempatkan konten ke sisi kiri */
+    padding-bottom: 15%;
+}
+.nama-bpk, .nama-ibu{
+    font-weight: bold;
+}
+
+.pria {
+    margin: 0; 
+    text-align: left; 
+}
+.nama-pria, .nama-wanita{
+    font-size: 46px;
+    font-family: "Tangerine", cursive;
+    font-weight: 700;
+    text-shadow: 2px 2px 8px rgb(217, 81, 235);
+
+}
+.pria-ket{
+    font-size: 10px;
+}
+
+.linniel-4 { 
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.137), rgba(0, 0, 0, 0.76), rgb(0, 0, 0)),
+                url('image/background/bg-noni.jpeg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: end;
+}
+#linniel-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Mendorong konten ke bawah */
+    height: 100vh; /* Membuat kontainer memenuhi tinggi layar */
+    padding-right: 20px; /* Jarak dari sisi kiri */
+    padding-bottom: 20px; /* Jarak dari sisi bawah */
+}
+
+.content-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Menempatkan konten ke sisi kiri */
+    padding-bottom: 15%;
+}
+
+.wanita {
+    margin: 0; 
+    text-align: right; 
+}
+
+.wanita-ket{
+    font-size: 10px;
+}
+
+.linniel-5 { 
+    background-color: rgb(0, 0, 0);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;   
+}
+.content-4 {
+    padding-top: 10%;
+}
+.jadwal-berkat{
+    width: 300px;
+}
+.jadwal, .jadwal-2{
+    font-size: 12px;
+}
+.btn-2{
+    border: solid 2px black;
+    color: pink;
+    box-shadow: 2px 2px 4px rgb(236, 134, 182);
+    font-size: 12px;
+}
+.linniel-6 { 
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.137), rgba(0, 0, 0, 0.788), rgb(0, 0, 0)),
+                url('image/background/bg-3.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;   
+}
+.content-5{
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100vh;
+    padding-bottom: 20px;
+    width: 90%;
+}
+.keluarga{
+    font-size: 12px;
+}
+.linniel-7 { 
+    background-color: rgb(0, 0, 0);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.gallery-item img{
+    height: 340px;
+    border-radius: 10px;
+}
+.gallery-item-2 img{
+    height: 220px;
+    border-radius: 10px;
+}
+.content-6{
+    max-width: 100%;
+}
+
+.linniel-8 { 
+    background-color: rgb(0, 0, 0);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.terim-kasih{
+    font-size: 14px;
+}
+.mempelai{
+    width: 240px;
+}
