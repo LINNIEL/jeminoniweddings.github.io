@@ -4,7 +4,7 @@ function getParameterByName(name) {
 }
 
 
-const namaTamu = getParameterByName('nama');
+const namaTamu = getParameterByName('untuk') || getParameterByName('kepada');
 
 
 if (namaTamu) {

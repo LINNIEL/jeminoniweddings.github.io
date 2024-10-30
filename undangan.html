@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Title</title>
+        <title>Jemi & Noni | Wedding</title>
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta
@@ -18,16 +18,15 @@
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&family=My+Soul&family=Sriracha&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
-
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flipdown@0.3.2/dist/flipdown.min.css">
         <link rel="stylesheet" href="assets/CSS/style.css">
         <link rel="stylesheet" href="assets/CSS/countdown.css">
         <link rel="stylesheet" href="assets/CSS/lightbox.css">
     </head>
-
     <body>
         <div class="container-mobile">
-            <audio id="background-music" src="music/musik.mp3" autoplay loop></audio>
+            <audio id="background-music" src="music/wedding_audio.mp3" autoplay loop></audio>
                 <div class="music-controls">
                     <button id="play-btn" style="display: none;">
                         <img src="assets/CSS/image/gif/play.png" alt="play-btn" class="play-btn">    
@@ -38,12 +37,17 @@
                 </div>
         <div id="linniel-2" class="linniel linniel-2 text-center align-items-center d-flex text-light">
                 <div class="content-1">
-                    <div class="ayat">
+                <div class="ayat" data-aos="fade-down"
+                    data-aos-anchor-placement="top-bottom"
+                    data-aos-duration="1000">
                         "Sehingga keduanya itu menjadi satu daging. Demikianlah mereka bukan lagi dua, melainkan satu."
                         <p class="ayat-2">~ Markus 8 : 10 ~</p>
-                    </div>
                 </div>
-                <div class="undangan">
+                </div>
+                <div class="undangan" data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom" 
+                data-aos-delay="1000"
+                data-aos-duration="2000">
                     <p>
                         <span class="quotes">"Dalam cinta, kita menemukan tempat pulang."</span> 
                         <br>
@@ -54,27 +58,35 @@
         </div>
         <div id="linniel-3" class="linniel linniel-3 d-flex text-light">
             <div class="content-2">
-                <div class="pria">
-                    <p class="nama-pria">Jemi Lazarus Mailufa</p>
-                    <p class="pria-ket">Anak ketiga dari <span class="nama-bpk">Bpk. Phelipus Lazarus Mailufa</span> dan <span class="nama-ibu">Ibu Margarita Dukabain, S.PAK</span></p>
+                <div class="pria" data-aos="fade-left"
+                data-aos-delay="500"
+                data-aos-duration="1000">
+                    <p class="nama-pria">Jemi Lazarus Mailufa</p><hr>
+                    <p class="pria-ket">Anak ketiga dari <span class="nama-bpk">Bpk. Phelipus Lazarus Mailufa</span> <br> dan <span class="nama-ibu">Ibu Margarita Dukabain, S.PAK</span></p>
                 </div>
             </div>
         </div>
         <div id="linniel-4" class="linniel linniel-4 d-flex text-light">
             <div class="content-3">
-                <div class="wanita">
-                    <p class="nama-wanita">Noni Shindiyani Pinat</p>
-                    <p class="wanita-ket">Anak pertama dari <span class="nama-bpk">Bpk. Nikodemus Pinat, S.Pd. Gr</span>  dan <span class="nama-ibu">Ibu Orance Ratulolo Pinat, S.Pd</span> </p>
+                <div class="wanita" data-aos="fade-right"
+                data-aos-delay="500"
+                data-aos-duration="1000">
+                    <p class="nama-wanita">Noni Shindiyani Pinat</p><hr>
+                    <p class="wanita-ket text-end">Anak pertama dari <span class="nama-bpk">Bpk. Nikodemus Pinat, S.Pd. Gr</span> <br> dan <span class="nama-ibu">Ibu Merry Orance Ratulolo Pinat, S.Pd</span> </p>
                 </div>
             </div>
         </div>
         <div id="linniel-5" class="linniel linniel-5 d-flex text-light">
             <div class="content-4">
               <p>Yang akan dilaksanakan pada :</p>
-              <img src="assets/CSS/image/foto/jadwal.png" alt="jadwal-berkat" class="jadwal-berkat py-1">
+              <img src="assets/CSS/image/foto/jadwal.png" alt="jadwal-berkat" class="jadwal-berkat py-1"
+              data-aos="fade-up" data-aos-duration="3000">
               <div class="container">
                 <div class="row justify-content-start">
-                    <div class="col-10">
+                    <div class="col-10"
+                    data-aos="fade-up"
+                    data-aos-delay="500"
+                    data-aos-duration="3000">
                         <p class="text-start fw-bold">Pemberkatan</p>
                         <hr>
                         <p class="jadwal text-start">Pukul 10 : 00 WITA</p>
@@ -89,7 +101,10 @@
                         </p>
                     </div>
                 </div>
-                <div class="row justify-content-end">
+                <div class="row justify-content-end"
+                    data-aos="fade-up"
+                    data-aos-delay="1000"
+                    data-aos-duration="3000">
                     <div class="col-10">
                         <p class="text-end fw-bold">Resepsi</p>
                         <hr>
@@ -108,7 +123,10 @@
                 </div>
             </div>
         </div>
-        <div id="countdown" >
+        <div id="countdown" 
+        data-aos="zoom-in"
+        data-aos-delay="2000"
+        data-aos-duration="3000">
             <p class="countdown">Hitungan mundur ke Acara</p>
             <div id='tiles'></div>
             <div class="labels">
@@ -122,17 +140,26 @@
 
           <div id="linniel-6" class="linniel linniel-6 text-center align-items-center d-flex text-light">
             <div class="content-5">
-                    <p class="text-start fw-bold"> Turut Mengundang </p>
+                    <p class="text-center fw-bold"
+                    data-aos="fade-up"
+                        data-aos-delay="1000"
+                        data-aos-duration="1000"> Turut Mengundang </p>
                     <hr>
                     <div class="row">
-                        <div class="col-6 keluarga text-start fw-bold">
+                        <div class="col-6 keluarga text-end fw-bold"
+                        data-aos="fade-right"
+                        data-aos-delay="1000"
+                        data-aos-duration="1000">
                             <p>Keluar besar Pinat</p>
                             <p>Keluar besar Ratulolo</p>
                             <p>Keluar besar Funome</p>
                             <p>Keluar besar Lassa</p>
                             <p>Keluar besar Pitay</p>
                         </div>
-                        <div class="col-6 keluarga text-end fw-bold">
+                        <div class="col-6 keluarga text-start fw-bold"
+                        data-aos="fade-up"
+                        data-aos-delay="1000"
+                        data-aos-duration="1000">
                             <p>Keluarga besar Mailufa</p>
                             <p>Keluarga besar Dukabain</p>
                             <p>Keluarga besar Samoy</p>
@@ -143,23 +170,40 @@
             </div>
             <div id="linniel-7" class="linniel linniel-7 text-center align-items-center d-flex text-light py-5">
                 <div class="content-6">
-                        <p class=" fw-bold"> Galeri Foto </p>
+                        <p class=" fw-bold" 
+                        data-aos="fade-right"
+                        data-aos-duration="1000"> Galeri Foto </p>
                         <div class="container">
                             <hr>
                             <div class="row galery text-center justify-content-center g-2 mx-auto">
-                                <div class="col-6 gallery-item">
+                                <div class="col-6 gallery-item" 
+                                data-aos="fade-right"
+                                data-aos-delay="100"
+                                data-aos-duration="1000">
                                     <img src="assets/CSS/image/foto/1.jpg" class="img-fluid" alt="Foto 1">
                                 </div>
-                                <div class="col-6 gallery-item">
+                                <div class="col-6 gallery-item"
+                                data-aos="fade-right"
+                                data-aos-delay="200"
+                                data-aos-duration="1000">
                                     <img src="assets/CSS/image/foto/4.jpg" class="img-fluid" alt="Foto 2">
                                 </div>
-                                <div class="col-4 gallery-item-2">
+                                <div class="col-4 gallery-item-2"
+                                data-aos="fade-up"
+                                data-aos-delay="100"
+                                data-aos-duration="1000">
                                     <img src="assets/CSS/image/foto/3.jpg" class="img-fluid" alt="Foto 3">
                                 </div>
-                                <div class="col-4 gallery-item-2">
+                                <div class="col-4 gallery-item-2"
+                                data-aos="fade-up"
+                                data-aos-delay="100"
+                                data-aos-duration="1000">
                                     <img src="assets/CSS/image/foto/2.jpg" class="img-fluid" alt="Foto 4">
                                 </div>
-                                <div class="col-4 gallery-item-2">
+                                <div class="col-4 gallery-item-2"
+                                data-aos="fade-up"
+                                data-aos-delay="100"
+                                data-aos-duration="1000">
                                     <img src="assets/CSS/image/foto/5.jpg" class="img-fluid" alt="Foto 5">
                                 </div>
                             </div>
@@ -172,28 +216,45 @@
                     <span class="next-btn">&#10095;</span>
                     <img id="lightbox-img" src="">
                 </div>
-                <div id="linniel-8" class="linniel linniel-8 text-center align-items-center d-flex text-light">
-                    <div class="content-6">
+                <div id="linniel-8" class="linniel linniel-8  d-flex text-light">
+                    <div class="content-7">
+                        <div class="terimakasih" 
+                        data-aos="fade-down"
+                        data-aos-delay="1000"
+                        data-aos-duration="1000">
+                            <span class="fs-5">Terima Kasih</span>
+                            <hr>
+                            <p>Kami sangat menghargai setiap doa dan dukungan yang telah Anda berikan. 
+                                Kehadiran Anda di hari bahagia kami adalah anugerah terindah."</p>
+                        </div>
+                        <img src="assets/CSS/image/background/terima kasih.png" alt="jemi&noni" class="mempelai py-2"
+                        data-aos="fade-up"
+                        data-aos-delay="1000"
+                        data-aos-duration="1000">
                         
-                        <img src="assets/CSS/image/background/jemi&Noni.jpg" alt="jemi&noni" class="mempelai">
+                        <p class="nama-mempelai" data-aos="fade-up"
+                        data-aos-delay="1000"
+                        data-aos-duration="1000">Jemi & Noni</p>
                 </div>
-             
+                <footer class="footer text-white">
+                    <div class="footer-line"></div>
+                    <div class="container text-center">
+                        <hr>
+                        <p>&copy; LINNIEL. All rights reserved.</p>
+                    </div>
+                </footer>
     </div>
           
-
-
-
-
-
-
-
-
 
         <script src="assets/JS/script.js"></script>
         <script src="assets/JS/lightbox.js"></script>
         <script src="assets/JS/music.js"></script>
         <script src="assets/JS/countdown.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/flipdown@0.3.2/dist/flipdown.min.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
             integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
