@@ -20,6 +20,6 @@
     opacity: 0; /* Transisi untuk menghilangkan elemen */
 }
 #loading img {
-    max-width: 200px; /* Sesuaikan ukuran gambar */
-    max-height: 200px;
+    max-width: 140px; /* Sesuaikan ukuran gambar */
+    max-height: 140px;
 }
